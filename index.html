@@ -1,0 +1,78 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="inicio.css">
+    <title>segundo</title>
+</head>
+<body>
+
+    <h1>Categoria de Simulados</h1>
+
+    <p>Atualmente temos 5 provas para fazer e todas estão em inglês. <br> Selecione apenas uma por vez.</p>
+  
+
+    <form id="prova" action="">
+
+    
+    <fieldset>
+        <legend>Selecione a prova : </legend>
+
+        <input   type="radio" id="prova1" name="opniao" value="1" checked >
+        <label for="prova1">Prova 1</label>
+        
+        
+<p></p>
+        <input   type="radio" id="prova2" name="opniao" value="2" checked >
+        <label for="prova2">Prova 2
+        </label>
+
+<p></p>
+        <input   type="radio" id="prova3" name="opniao" value="3" checked>
+        <label for="prova3">Prova  3
+        </label>
+
+<p></p>
+        <input  c type="radio" id="prova4" name="opniao" value="4" checked>
+        <label for="prova4">Prova 4 
+        </label>
+        <p></p>
+        <input   type="radio" id="prova5" name="opniao" value="5" checked >
+        <label for="prova5">Prova 5
+        </label>
+  <p></p>
+    <button type="submit" onclick="escolha();return false"name="button1" id="button1"
+    location.href = "prova1.html";
+    >Escolher</button> 
+</fieldset>
+   
+        
+    <p>Após o termino da prova o resultado será mostrado no final.</p>
+    <p>#busquemConhecimento&#128125</p>
+
+
+    <script>
+       function escolha(){
+        const button1 = document.getElementById("prova1");
+        const button2 = document.getElementById("prova2");
+        const button3 = document.getElementById("prova3");
+        const button4 = document.getElementById("prova4");
+        const button5 = document.getElementById("prova5");
+        if(button1.checked == true){
+            location.href = "prova1.html";
+        }  else if(button2.checked == true){
+            alert('Somente a prova 1 está liberada')
+        }else if (button3.checked == true){
+            alert('Somente a prova 1 está liberada')
+        }else if (button4.checked == true){
+            alert('Somente a prova 1 está liberada')
+        }else if (button5.checked == true){
+            alert('Somente a prova 1 está liberada')
+    }
+    
+}
+            
+    </script>
+</body>
+</html>
